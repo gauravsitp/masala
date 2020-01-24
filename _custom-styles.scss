@@ -689,7 +689,7 @@ footer.page-footer {
         }
     }
     @media (max-width: 767px) {
-        height: 230px;
+        // height: 230px;
         .slick-slide {
             overflow: hidden;
             .card-overlay-title {
@@ -785,9 +785,6 @@ footer.page-footer {
             left: 0;
             right: 0;
             margin: auto;
-        }
-        @media (max-width: 767px) {
-            top: -1.5rem;
         }
     }
     .slick-prev {
@@ -992,6 +989,7 @@ footer.page-footer {
         @media (max-width: 767px) {
             * {
                 color: $black;
+                font-size: 12px;
             }
         }
     }
@@ -2039,7 +2037,8 @@ li.nav-item.dropdown.has-megamenu.active a {
 .term-blogs,
 .term-parenting,
 .term-tech,
-.term-cars {
+.term-cars,
+.term-photos {
     padding: 5.5px 10px;
     display: inline-block;
 }
@@ -2064,7 +2063,8 @@ li.nav-item.dropdown.has-megamenu.active a {
 .term-blogs a,
 .term-parenting a,
 .term-tech a,
-.term-cars a {
+.term-cars a,
+.term-photos a {
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -2084,7 +2084,8 @@ li.nav-item.dropdown.has-megamenu.active a {
 .term-bollywood-news,
 .term-telly-scoop,
 .term-movies,
-.term-latest-movie-reviews {
+.term-latest-movie-reviews,
+.term-photos {
     background-image: linear-gradient(92deg, #ffd445, #ff7600 100%);
 }
 
@@ -3667,7 +3668,7 @@ span.rate-off {
 }
 
 //galarry style css starts here
-.thum-slider.thum-slider-article {
+.thum-slider.thum-slider-article { 
     padding: 0 !important;
     li {
         margin: 0 10px;
