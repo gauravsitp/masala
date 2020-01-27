@@ -4525,8 +4525,15 @@ span.rate-off {
             z-index: 999;
             text-align: right;
             li { 
-                height: 10px;
-                width: 10px;
+                width: 15px;
+                margin: 0 3px;
+                height: 15px;
+            }
+            button {
+                border-radius: 15px;
+                height: 15px;
+                width: 15px; 
+                margin: 0;
             }
         }
         
@@ -4535,7 +4542,8 @@ span.rate-off {
 
 .slick-dots li.slick-active {
     padding: 0;
-    border: 1px solid rgba(255,255,255,.3);
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 50%;
 }
 .slick-dots button {
     font-size: 0;
@@ -4545,16 +4553,24 @@ span.rate-off {
 .slick-dots li button:before {
     content: ' ';
     display: block;
-    height: 4px;
-    width: 4px;
-    background: #ccc;
+    height: 5px !important;
+    width: 5px !important;
+    background: #fff;
     border-radius: 50%;
+    opacity: inherit !important;
+    font-size: 0 !important;
+    line-height: normal !important;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    top: 0;
 }
 .slick-dots li.slick-active button:before, 
 .slick-dots li.slick-active button:before {
     background: #000;
-    height: 8px;
-    width: 8px;
+    height: 7px !important;
+    width: 7px !important;
 }
 .slick-dots li.slick-active button:before {
     background: #fff;
