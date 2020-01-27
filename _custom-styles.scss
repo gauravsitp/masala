@@ -686,7 +686,7 @@ footer.page-footer {
         margin: 0;
         .card {
             margin: 0 !important;
-        }
+        } 
     }
     @media (max-width: 767px) {
         // height: 230px;
@@ -1358,6 +1358,16 @@ footer.page-footer {
             margin-bottom: 20px;
             h3 {
                 font-size: 20px;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .section-header {
+            margin-bottom: 0;
+            h3 {
+                font-size: 16px;
+                letter-spacing: 0.2px;
+                margin: 0;
             }
         }
     }
@@ -2218,6 +2228,80 @@ div#page:before {
 .w-80 {
     width: 80% !important;
 }
+
+.gallery-snippet-new .slick-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-snippet-new.slick-initialized .slick-slide {
+    display: block;
+}
+
+.gallery-snippet-new .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+.article-main-content .gallery-snippet-new .slick-list {
+    margin: 0;
+}
+
+.gallery-snippet-new .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0 130px; 
+    z-index: 9;
+    padding: 0;
+}
+
+.gallery-snippet-new.slick-slider {
+    position: relative;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.thum-slider-new.thum-slider-article li img {
+    width: 100%;
+    border-radius: 0;
+}
+
+.thum-slider-new.thum-slider-article li {
+    margin: 0 10px;
+}
+
+.thum-slider-new .list-inline-item {
+    text-align: center;
+    outline: none;
+    margin: 0 20px;
+    vertical-align: top;
+}
+
+.thum-slider-new .slick-list {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow: hidden;
+}
+.thum-slider-new.thum-slider-article {
+    padding: 0 !important;
+}
+
+
 
 //*** Gaurav CSS End ***//
 footer ul.footer-social li {
@@ -4432,6 +4516,60 @@ span.rate-off {
             }
         }
     }
+    @media (max-width: 767px) {
+        position: inherit;
+        margin-bottom: 1rem;
+        .slick-dots {
+            bottom: 40px;
+            right: 15px;
+            z-index: 999;
+            text-align: right;
+            li { 
+                height: 10px;
+                width: 10px;
+            }
+        }
+        
+    }
+}
+
+.slick-dots li.slick-active {
+    padding: 0;
+    border: 1px solid rgba(255,255,255,.3);
+}
+.slick-dots button {
+    font-size: 0;
+    padding: 1px 4px 2px 4px;
+}
+.slick-dots li button:before, 
+.slick-dots li button:before {
+    content: ' ';
+    display: block;
+    height: 4px;
+    width: 4px;
+    background: #ccc;
+    border-radius: 50%;
+}
+.slick-dots li.slick-active button:before, 
+.slick-dots li.slick-active button:before {
+    background: #000;
+    height: 8px;
+    width: 8px;
+}
+.slick-dots li.slick-active button:before {
+    background: #fff;
+}
+
+.slick-dots li.slick-active {
+    display: inline-block;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 0;
+    margin:0;
+    z-index: 1;
 }
 
 .facebook-comm {
