@@ -738,6 +738,7 @@ footer.page-footer {
         }
     }
     @media (max-width: 767px) {
+        
         padding-top: 20px;
         .list-inline-item {
             img {
@@ -4520,10 +4521,9 @@ span.rate-off {
         position: inherit;
         margin-bottom: 1rem;
         .slick-dots {
-            bottom: 40px;
-            right: 15px;
-            z-index: 999;
-            text-align: right;
+            bottom: 50px;
+            right: 0;
+            z-index: 9999;
             li { 
                 width: 15px;
                 margin: 0 3px;
@@ -4542,7 +4542,7 @@ span.rate-off {
 
 .slick-dots li.slick-active {
     padding: 0;
-    border: 1px solid rgba(255,255,255,.5);
+    border: 1px solid #ec0b06;
     border-radius: 50%;
 }
 .slick-dots button {
@@ -4573,7 +4573,7 @@ span.rate-off {
     width: 7px !important;
 }
 .slick-dots li.slick-active button:before {
-    background: #fff;
+    background: #ec0b06;
 }
 
 .slick-dots li.slick-active {
