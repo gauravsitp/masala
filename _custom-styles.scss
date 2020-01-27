@@ -686,7 +686,7 @@ footer.page-footer {
         margin: 0;
         .card {
             margin: 0 !important;
-        } 
+        }
     }
     @media (max-width: 767px) {
         // height: 230px;
@@ -2253,7 +2253,7 @@ div#page:before {
     position: relative;
     display: block;
     overflow: hidden;
-    margin: 0 130px; 
+    margin: 0 130px;
     z-index: 9;
     padding: 0;
 }
@@ -2281,8 +2281,13 @@ div#page:before {
     border-radius: 0;
 }
 
-.thum-slider-new.thum-slider-article li {
-    margin: 0 10px;
+.thum-slider-new {
+    .thum-slider-article {
+        li {
+            margin: 0 5px;
+            position: relative;
+        }
+    }
 }
 
 .thum-slider-new .list-inline-item {
@@ -2297,11 +2302,10 @@ div#page:before {
     padding-right: 0 !important;
     overflow: hidden;
 }
+
 .thum-slider-new.thum-slider-article {
     padding: 0 !important;
 }
-
-
 
 //*** Gaurav CSS End ***//
 footer ul.footer-social li {
@@ -3752,7 +3756,7 @@ span.rate-off {
 }
 
 //galarry style css starts here
-.thum-slider.thum-slider-article { 
+.thum-slider.thum-slider-article {
     padding: 0 !important;
     li {
         margin: 0 10px;
@@ -4524,24 +4528,25 @@ span.rate-off {
             right: 15px;
             z-index: 999;
             text-align: right;
-            li { 
+            li {
                 height: 10px;
                 width: 10px;
             }
         }
-        
     }
 }
 
 .slick-dots li.slick-active {
     padding: 0;
-    border: 1px solid rgba(255,255,255,.3);
+    border: 1px solid rgba(255, 255, 255, .3);
 }
+
 .slick-dots button {
     font-size: 0;
     padding: 1px 4px 2px 4px;
 }
-.slick-dots li button:before, 
+
+.slick-dots li button:before,
 .slick-dots li button:before {
     content: ' ';
     display: block;
@@ -4550,12 +4555,14 @@ span.rate-off {
     background: #ccc;
     border-radius: 50%;
 }
-.slick-dots li.slick-active button:before, 
+
+.slick-dots li.slick-active button:before,
 .slick-dots li.slick-active button:before {
     background: #000;
     height: 8px;
     width: 8px;
 }
+
 .slick-dots li.slick-active button:before {
     background: #fff;
 }
@@ -4563,12 +4570,13 @@ span.rate-off {
 .slick-dots li.slick-active {
     display: inline-block;
 }
+
 .slick-dots {
     position: absolute;
     bottom: 20px;
     right: 20px;
     padding: 0;
-    margin:0;
+    margin: 0;
     z-index: 1;
 }
 
