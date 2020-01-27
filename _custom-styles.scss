@@ -2282,11 +2282,18 @@ div#page:before {
 }
 
 .thum-slider-new {
-    .thum-slider-article {
+    &.thum-slider-article {
         li {
             margin: 0 5px;
-            position: relative;
         }
+    }
+    position: relative;
+}
+
+.thum-slider-new {
+    .slick-prev,
+    .slick-next {
+        z-index: 9;
     }
 }
 
