@@ -738,7 +738,7 @@ footer.page-footer {
         }
     }
     @media (max-width: 767px) {
-        
+
         padding-top: 20px;
         .list-inline-item {
             img {
@@ -769,6 +769,11 @@ footer.page-footer {
         }
     }
     .slick-list {
+         @media (max-width: 992px) {
+            .list-inline-item {
+                margin: 0 20px;
+            }
+        }
         padding-left: 0 !important;
         padding-right: 0 !important;
         overflow: hidden;
